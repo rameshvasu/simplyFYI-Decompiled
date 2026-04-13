@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\rames\OneDrive\Desktop\PayPalIPNHandler\PayPalIPNHandler.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4CA8368-8E4D-4A5E-92E9-BAD9CAA79B4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>PayPalIPNHandler</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>RameshInnovation.SimplyfyiExpress</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FYIDAL">
+      <HintPath>lib\FYIDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="PushoverAdapter">
+      <HintPath>lib\PushoverAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utils">
+      <HintPath>lib\Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiShare4OLTypes">
+      <HintPath>lib\VoiShare4OLTypes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommentBox.cs" />
+    <Compile Include="PayPalIPNHandler.cs" />
+    <Compile Include="PayPalIPNTest.cs" />
+    <Compile Include="SomeNamespace\PayPalIPNHandler.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\rames\OneDrive\Desktop\PayPalIPNHandler\Utils.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{494CC222-6F13-474F-99FC-DF7BE0B06C73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Utils</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FYIDAL">
+      <HintPath>lib\FYIDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="PushoverAdapter">
+      <HintPath>lib\PushoverAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VoiShare4OLTypes">
+      <HintPath>lib\VoiShare4OLTypes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RameshInnovation\VoiShare\OfficeLive\DynamicDiv.cs" />
+    <Compile Include="RameshInnovation\VoiShare\OfficeLive\Logger.cs" />
+    <Compile Include="RameshInnovation\VoiShare\OfficeLive\PayPalHelper.cs" />
+    <Compile Include="RameshInnovation\VoiShare\OfficeLive\UserDateTime.cs" />
+    <Compile Include="RameshInnovation\VoiShare\OfficeLive\Utilities.cs" />
+    <Compile Include="RameshInnovation\VoiShare\OfficeLive\WebErrorHandler.cs" />
+    <Compile Include="Utils\CAMLClauseEvaluator.cs" />
+    <Compile Include="Utils\EMailSender.cs" />
+    <Compile Include="Utils\Encode64.cs" />
+    <Compile Include="Utils\PageDescription.cs" />
+    <Compile Include="Utils\QueryStringCacheWriter.cs" />
+    <Compile Include="Utils\SessionValidator.cs" />
+    <Compile Include="Utils\Properties\Settings.cs" />
+    <Compile Include="Utils\OLClientWS\ClientConnectWS.cs" />
+    <Compile Include="Utils\OLClientWS\OLResource.cs" />
+    <Compile Include="Utils\OLClientWS\OfficeLiveResourceType.cs" />
+    <Compile Include="Utils\OLClientWS\OLView.cs" />
+    <Compile Include="Utils\OLClientWS\OLListField.cs" />
+    <Compile Include="Utils\OLClientWS\EndPointType.cs" />
+    <Compile Include="Utils\OLClientWS\OLList.cs" />
+    <Compile Include="Utils\OLClientWS\ConnectCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\ConnectCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\AuthenticateCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetSubscriptionsCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetSubscriptionsCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetBaseResourceUrlCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetBaseResourceUrlCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\IsUserResourceOwnerCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\IsUserResourceOwnerCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetResourcesForUserSubscriptionCompletedEventHandl.cs" />
+    <Compile Include="Utils\OLClientWS\GetResourcesForUserSubscriptionCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetUsersForResourceCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetUsersForResourceCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetListsForResourceCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetListsForResourceCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\ExecuteQueryCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\ExecuteQueryCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetChoicesFieldValuesCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetChoicesFieldValuesCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetListItemsAsDataSetCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetListItemsAsDataSetCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\DeleteAllListItemsCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\AddListItemsCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\UpdateListItemsCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetListViewAsXmlCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetListViewAsXmlCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetListViewCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetListViewCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\QueryListCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\QueryListCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\GetListViewsCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\GetListViewsCompletedEventArgs.cs" />
+    <Compile Include="Utils\OLClientWS\WriteQueryStringToCacheCompletedEventHandler.cs" />
+    <Compile Include="Utils\OLClientWS\WriteQueryStringToCacheCompletedEventArgs.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
