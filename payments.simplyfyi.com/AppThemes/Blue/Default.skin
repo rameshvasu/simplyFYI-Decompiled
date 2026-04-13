@@ -1,0 +1,92 @@
+<%-- Different images for the page masthead. --%> 
+<asp:Image runat="server" SkinID="mastheadHome" ImageUrl="./Images/homepage/masthead.jpg" GenerateEmptyAlternateText="true" Height="486" Width="760" />
+<asp:ImageMap SkinID="masthead1" runat="server" ImageUrl="./Images/masthead1.jpg" GenerateEmptyAlternateText="true" Height="206" Width="760">
+	<asp:RectangleHotSpot Top="0" Right="760" Bottom="160" Left="0" NavigateUrl="~/Default.aspx" />
+</asp:ImageMap>
+<asp:ImageMap SkinID="masthead2" runat="server" ImageUrl="./Images/masthead2.jpg" GenerateEmptyAlternateText="true" Height="206" Width="760">
+	<asp:RectangleHotSpot Top="0" Right="760" Bottom="160" Left="0" NavigateUrl="~/Default.aspx" />
+</asp:ImageMap>
+<asp:ImageMap SkinID="masthead3" runat="server" ImageUrl="./Images/masthead3.jpg" GenerateEmptyAlternateText="true" Height="206" Width="760">
+	<asp:RectangleHotSpot Top="0" Right="760" Bottom="160" Left="0" NavigateUrl="~/Default.aspx" />
+</asp:ImageMap>
+
+<%-- Company logo. --%>
+<asp:Image runat="server" SkinID="logoImage" Width="29" Height="49" ImageUrl="./Images/logo_big.gif" />
+
+<%-- The site's stylish menu. --%>
+<%-- http://www.aspnetsource.com/resources/asp-net-menu-skins.html --%>
+<asp:Menu runat="server" SkinId="HeaderMenuSkin"
+  BackColor="#3F93DB" DynamicHorizontalOffset="2" Font-Names="Calibri" 
+  Font-Size="16px" Font-Bold="true" ForeColor="#FFFFFF" StaticSubMenuIndent="10px">
+    <StaticSelectedStyle BackColor="#C9E26A" />
+    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <DynamicHoverStyle BackColor="#C9E26A" ForeColor="White" />
+    <DynamicMenuStyle BackColor="#C9E26A" BorderStyle="Solid" BorderWidth="1px" BorderColor="#80B877" />
+    <DynamicSelectedStyle BackColor="#FFCC66" />
+    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <StaticHoverStyle BackColor="#C1DF59" ForeColor="White" />
+</asp:Menu>
+
+<%-- The site's main menu. --%>
+<asp:Menu runat="server" DynamicHorizontalOffset="6" StaticPopOutImageUrl="./Images/flyout.gif" DynamicPopOutImageUrl="./Images/flyout.gif">
+    <StaticMenuStyle Width="180px" Font-Size="Medium" />
+    <StaticMenuItemStyle CssClass="menuNormal" VerticalPadding="6" />
+    <StaticHoverStyle CssClass="menuHover" />
+    <StaticSelectedStyle CssClass="menuSelected" />
+    <DynamicMenuStyle CssClass="subMenu" />
+    <DynamicMenuItemStyle CssClass="subMenuNormal" Width="188px" VerticalPadding="6" />
+    <DynamicHoverStyle CssClass="subMenuHover" Width="180px" />     
+</asp:Menu>
+
+<%-- GridView --%>
+<%--
+<asp:GridView SkinID="gvGridView" runat="server" AllowPaging="False" AllowSorting="False"
+		AutoGenerateColumns="True" BackColor="#FFFFFF" BorderColor="#FFEB79" BorderStyle="Solid" BorderWidth="1px" CellPadding="1" ForeColor="#666666" GridLines="None">
+		<HeaderStyle BackColor="#46D644" Font-Bold="True" ForeColor="#FFFFFF" Height="30px" />
+		<RowStyle BackColor="#FFFFFF" ForeColor="#666666" />
+		<AlternatingRowStyle BackColor="#FFEB79" />
+		<PagerStyle BackColor="#46D644" ForeColor="#FFFFFF" HorizontalAlign="Center" />
+</asp:GridView>
+--%>
+
+<asp:GridView Width="100%" Font-Size="12px" RowStyle-Wrap="false" SkinID="gvGridView" runat="server" AllowPaging="False" AllowSorting="False"
+		AutoGenerateColumns="True" BackColor="#FFFFFF" BorderColor="#dadada" BorderStyle="Solid" BorderWidth="0px" CellPadding="0" CellSpacing="0" ForeColor="Purple" GridLines="None">
+		<HeaderStyle BackColor="#cccccc" Font-Bold="True" ForeColor="#000000" Height="30px" />
+		<RowStyle BackColor="#FFFFFF" ForeColor="#000000" Height="30px" />
+		<AlternatingRowStyle BackColor="#D8E7FF" />
+		<PagerStyle BackColor="#cccccc" ForeColor="#FFFFFF" HorizontalAlign="Center" />
+</asp:GridView>
+
+<asp:GridView Width="100%" Font-Size="12px" RowStyle-Wrap="false" SkinID="gvGridView2" runat="server" AllowPaging="False" AllowSorting="False"
+		AutoGenerateColumns="True" BackColor="#FFFFFF" BorderColor="#dadada" BorderStyle="Solid" BorderWidth="1px" CellPadding="5" CellSpacing="1" ForeColor="Purple" GridLines="Vertical">
+		<HeaderStyle BackColor="#cccccc" Font-Bold="True" ForeColor="#000000" Height="30px" />
+		<RowStyle BackColor="#FFFFFF" ForeColor="#000000" Height="30px" />
+		<AlternatingRowStyle BackColor="#D8E7FF" />
+		<PagerStyle BackColor="#cccccc" ForeColor="#FFFFFF" HorizontalAlign="Center" />
+</asp:GridView>
+
+<asp:GridView Width="100%" Font-Size="12px" RowStyle-Wrap="false" SkinID="gvGridViewJournal" runat="server" AllowPaging="False" AllowSorting="False"
+		AutoGenerateColumns="True" BackColor="#FFFFFF" BorderColor="#dadada" BorderStyle="Solid" BorderWidth="0px" CellPadding="0" CellSpacing="0" ForeColor="Purple" GridLines="None">
+		<HeaderStyle BackColor="#cccccc" Font-Bold="True" ForeColor="#000000" Height="30px"  />
+		<RowStyle BackColor="#FFFFFF" ForeColor="#000000" Height="30px" />
+		<AlternatingRowStyle BackColor="#D8E7FF" />
+		<PagerStyle BackColor="#cccccc" ForeColor="#FFFFFF" HorizontalAlign="Center" />
+</asp:GridView>
+
+<asp:GridView Width="100%" Font-Size="12px" RowStyle-Wrap="false" SkinID="gvGridViewStats" runat="server" AllowPaging="False" AllowSorting="False"
+		AutoGenerateColumns="True" BackColor="#FFFFFF" BorderColor="#dadada" BorderStyle="Solid" BorderWidth="0px" CellPadding="0" CellSpacing="0" ForeColor="Purple" GridLines="None">
+		<HeaderStyle BackColor="#cccccc" Font-Bold="True" ForeColor="#000000" Height="30px" />
+		<RowStyle BackColor="#FFFFFF" ForeColor="#000000" />
+		<AlternatingRowStyle BackColor="#D8E7FF" />
+		<PagerStyle BackColor="#cccccc" ForeColor="#FFFFFF" HorizontalAlign="Center" />
+</asp:GridView>
+
+<%-- Default skin for all textboxes. --%>
+<asp:TextBox runat="server" CSSClass="textBox" />
+
+<%-- Skins for controls on the 'Contact.aspx' page. --%>
+<asp:DropDownList SkinID="ddlMags" runat="server" CSSClass="dropDownlist" />
+<asp:RadioButtonList SkinID="rblFormat" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow" CSSClass="radioButtonList" />
+
+<%-- Default button appearance --%>
+<asp:Button runat="server" CssClass="button" />
