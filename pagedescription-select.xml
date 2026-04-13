@@ -1,0 +1,73 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        The SELECT COMMUNICATION CHANNEL page is where your specify the communication channel (email, SMS and voice) to send the message via. 
+        Like the SEARCH page, the SELECT page lets you search through the Office Live Small Business apps and lists that you have acces to and select those fields that contain the phone/SMS number or email address of the recepient. .
+        <br/>Let's see how this is done.
+
+        <br/><br/><strong>NAVIGATE LISTS</strong><br/>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Application Type</strong>
+          </i>
+          <br/>This is a list of the different types of Office Live Small Business Applications. Select the type of Application that you want to work with.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Application</strong>
+          </i>
+          <br/>This is a list of applications that match the selected Application Type. Select the Application that you want to search through.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>List</strong>
+          </i>
+          <br/>This is a list of all the lists in the selected Application. Select the list in the application that has the communication fields (like EmailAddress, Phone, etc.).
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>View</strong>
+          </i>
+          <br/>This is a list of all the views for the selected list. Select the view that you want to work with.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Linked List</strong>
+          </i>
+          <br/>This is a list of lookup lists used by the selected list. Select a linked list if you want to use any of the fields in it for communication.
+        </div>
+        <br/><strong>Note: </strong>The Navigate Lists controls are enabled only when creating a new FYI. When you open an existing FYI, Navigate Lists are grayed out
+        and cannot be changed.
+
+        <br/><br/><strong>SELECT MESSAGE FIELDS</strong><br/>
+        This shows the fields in the selected list. Use the "Yes" dropdown list to select the communication method (email, SMS, Phone) that you want to use.
+        This basically tells simplyfyi to use the value in the field as the email address, SMS or Phone number. For proper delivery of messages, care should be taken to use the right field
+        with the matching communication method in the dropdown list.
+
+        <br/><br/><strong>CHECK QUERY</strong><br/>
+        Click "Check Query" button to test your search. The results will include the fields selected in both the SEARCH and SELECT pages.
+        Upto 50 rows of results will be displayed values of the fields that you selected.
+
+        <br/><br/><strong>NEXT BUTTON</strong><br/>
+        Clicking the "Next" button will take you to the "SCRIBE" page.
+
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

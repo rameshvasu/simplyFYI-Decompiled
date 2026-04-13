@@ -1,0 +1,6 @@
+﻿<shipmentconfirmationtemplate>
+  <![CDATA[
+     <font color="#9ACD32" face="Arial" size="5">THANK YOU</font><font color="#808080"><font face="Arial" size="2"><font color="#9ACD32" size="5">   </font><br>     <br>       Thank you for your order. Enclosed are the details of your order. If applicable, your product key codes will be sent in a separate email shortly.                <br>                        <br>All products including software and ebooks are delivered electronically.                         <br>         <br>           <font color="#9ACD32" size="5">ORDER DETAILS</font>           <br>             [%PAYMENTDETAILS%]<br>               </font><font face="Arial" size="2">                 <br>                   If you have any questions, please contact us at sales@XYZ.com</font>               </font>  
+     <br/>
+  ]]>  
+</shipmentconfirmationtemplate>

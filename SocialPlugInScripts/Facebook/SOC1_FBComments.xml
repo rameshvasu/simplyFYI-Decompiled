@@ -1,0 +1,49 @@
+﻿<facebook>
+  <fbcomment>
+    <div style="max-width:140px;background:#fff; border:solid 1px #dadada;font-family:Arial; font-size:12px; font-weight:normal; text-align:center; padding: 10px 2px 10px 2px; line-height:normal;vertical-alignment:middle">
+      <div>
+        <a href="[%COMMENTBOXPAGEHOMEURL%]/CommentBox.aspx?metaid=[%HANDLERMETAID%]" target="_blank">
+          <img src="http://www.simplyfyi.com/img/f_logo.jpg"/>
+        </a>
+      </div>
+      <div style="padding-top:20px">
+        <a style="font-family:Arial; font-size:12px;" href="[%COMMENTBOXPAGEHOMEURL%]/CommentBox.aspx?metaid=[%HANDLERMETAID%]" target="_blank">Tell your friends the story behind your purchase or donation</a>
+      </div>
+    </div>
+  </fbcomment>
+  <fbcommentscript>
+    <div style="margin-bottom:20px;margin-top:20px;font-family:Arial;font-weight:normal;font-size: 28px;color:#293f4f;">Share with your Friends</div>
+    <div style="font-family:Arial; font-size:14px; padding-bottom:15px">
+      We're sure you have a story behind what made you make this purchase or donation. <br/>Go on, share it with your friends!
+    </div>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+      (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      } (document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+    <div style="padding:10px;border:solid 1px #dadada">
+      <div id="fbcomment" class="fb-comments" href="{LINKTOFBCOMMENT}" data-width="470" num-posts="10"></div>
+    </div>
+    <div style="padding:10px;">
+      <a style="font-family:Arial; font-size:12px;" id="closelink" href="">Close</a>
+    </div>
+
+    <script type="text/javascript">
+      FB.init(null, "./xd_receiver.htm");
+    </script>
+    <script type="text/javascript">
+      $("#closelink").click(function(){
+      window.close();
+      });
+
+    </script>
+  </fbcommentscript>
+</facebook>

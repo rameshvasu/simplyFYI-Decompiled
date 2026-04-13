@@ -1,0 +1,42 @@
+﻿<div style='background-color:#fafafa; border:solid #7a7a7a 1px'>  
+  <!--<img src='http://www.logoloop.com/wp-content/uploads/2010/04/logo-banner.jpg' alt='logo'/>-->
+  <div align='center'>
+    <br/>
+    <b>
+      <font size='7'>
+        <br/>
+        {ORGANIZATION}
+      </font>
+    </b>
+    <br/>
+      <br/>
+        <div>
+          <input type='text' style='color:#5a5a5a; text-align:center; height:55px;font-size: 48px; font-weight:bold;font-family:Trebuchet MS,Lucida Grande,Arial,Helvetica,sans-serif' id='promotiontext' value='{PROMOTIONTEXT}' size='30'></input>
+        </div>
+        <br/>
+          <br/>
+  </div>
+  <div align='center'>
+    <br/>
+      <b>
+        <font color='#008000' size='8'>
+          <font size='7'>
+            JUST TEXT<br/>
+              <br/>
+          </font>JOIN {ORGKEY} EMAIL NAME<br/>
+            <br/>to 9161234567
+        </font>
+      </b>
+      <br/>
+        <br/>
+          <b>
+            <font color='#000080' size='6'>Eg. 'JOIN {ORGKEY} brad@gmail.com Brad'</font>
+          </b>
+          <br/>
+            <font size='6'>
+              <br/>
+                <!--<img src='http://www.babelpr.com/images/people/People-at-Babel-PR.png' alt='join' width='650'/>-->
+                <br/>
+            </font>
+  </div>
+</div>

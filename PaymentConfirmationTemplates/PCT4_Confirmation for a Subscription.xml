@@ -1,0 +1,21 @@
+﻿<paymentconfirmationtemplate>
+  <![CDATA[
+  <font color="#808080" face="Arial" size="2">
+    <font color="#9ACD32" size="5">THANKS FOR YOUR SUBSCRIPTION</font>
+    <br>
+      <br>
+        Thank you for subscribing to our service. You will receive premium articles from our team of experts. You will be charged every month for this subscription.<br>
+          <font color="#9ACD32" size="5">
+            <br>SUMMARY OF YOUR CONTRIBUTION
+          </font>
+          <br>
+            [%PAYMENTDETAILS%]<br>
+              <br>
+                <br>
+                  Thank you. We look forward to your continued support.<br>
+                    <br>Warmest Regards, 
+  </font>
+  <br/>
+  ]]>
+    
+</paymentconfirmationtemplate>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<simplyfyi>
+  <api version="1.0"/>
+  <auth apikey="your-api-key"/>
+  <app id="appid">
+    <msg>
+      <fields>        
+      </fields>
+      <schedule type="">
+        <senddatetime></senddatetime>
+      </schedule>
+    </msg>
+  </app>
+</simplyfyi>

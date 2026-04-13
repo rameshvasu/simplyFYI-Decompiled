@@ -1,0 +1,17 @@
+﻿<promotionalmessagetemplate>
+  <![CDATA[
+  <div>
+    <div style="max-width:135px;background:#ffffff; border:solid 1px #dadada;font-family:Arial; font-size:12px; font-weight:normal; text-align:center; padding: 2px 2px 2px 2px; line-height:normal;vertical-alignment:middle">
+      <div>
+        <img src="https://dl.dropboxusercontent.com/u/24992047/simplyFYI/Marketing/new-product.jpg" style="max-width:130px"/>
+      </div>
+      <div style="background:#ffffff;padding: 2px 2px 2px 2px; vertical-align:top;line-height:normal;">
+        <div align="center">
+          <font color="#808080" size="2">Some text Some textSome textSome textSome textSome textSome text</font>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <br/>
+  ]]>
+</promotionalmessagetemplate>
