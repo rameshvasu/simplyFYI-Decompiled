@@ -1,0 +1,7 @@
+﻿<genericemailmessagefootertemplate>
+  <div style="font-family:Arial; font-size:10px; background-color:#fff; border:solid 1px #fff; padding:5px 0px 5px 0px; border-top:solid 1px #aaa;border-bottom:solid 1px #aaa; text-align:center">
+    This email message was sent on behalf of [BUSINESSNAMEANDADDRESS].
+    <br/><br/>
+    This message was sent to the following e-mail address: [TOEMAIL]. Not interested in receiving emails? It's easy to [UNSUBSCRIBELINK]. Be sure to add [FROMEMAIL] to your address book or safe senders list so our emails get to your inbox.
+  </div>
+</genericemailmessagefootertemplate>

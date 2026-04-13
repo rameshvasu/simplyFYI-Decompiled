@@ -1,0 +1,26 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+
+        Enter a descriptive name for your FYI and click Continue. 
+        <br/><br/>Examples of descriptive FYI names are:<br />
+        <br />
+        <ul>
+          <li>Send appointment reminders to patients by email</li>
+          <li>Send birthday greeting to employees by email</li>
+          <li>Send thankyou note by SMS to customers who bought for over $100 last week</li>
+        </ul>
+        <br/>
+        The list of FYIs that you created earlier (if any) are displayed for reference.
+
+
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

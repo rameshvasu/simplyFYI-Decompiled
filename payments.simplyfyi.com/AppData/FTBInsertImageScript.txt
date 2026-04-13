@@ -1,0 +1,25 @@
+﻿var img = this.GetNearest('img');                   
+var imgSrc = '';
+if (img) {
+	var imgSrc = img.getAttribute('temp_src');
+	if (!imgSrc) imgSrc = img.getAttribute('src');
+}
+	
+imgSrc = prompt('Enter image URL:', (imgSrc != '') ? imgSrc : 'http://');
+	
+if (imgSrc != '') {
+	if (!img) {
+		var tempUrl = 'http://tempuri.org/tempuri.html';
+		this.ExecuteCommand('insertimage',null,tempUrl);		
+		var imgs = this.designEditor.document.getElementsByTagName('img');
+		for (var i=0;i<imgs.length;i++) {
+			if (imgs[i].src == tempUrl) {
+				img = imgs[i];		
+				imgs[i].style.width = '599px';		
+				break;
+			}
+		}		
+	}
+	img.src = imgSrc;	
+	img.setAttribute('temp_src',imgSrc);
+}

@@ -1,0 +1,34 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        VOICE SHARE lets you schedule messages.
+        <br/><br/>
+        <strong>Save and run Loopback Test: </strong> Selecting his option and clicking SUBMIT saves the FYI and sends test VOICEs to yourself so that you can
+        verify that everything looks good. Upto 5 VOICE messages will be sent. You will not be charged for sending test messages using this option.
+        <br/><br/>
+        <strong>Save and send now: </strong> Selecting this option and clicking SUBMIT saves the FYI and queues the messages for delivery NOW.
+        <br/><br/>
+        <strong>Save and schedule to send later: </strong> Selecting this option displays a date and time selector to schedule delivery in the future.
+        Clicking SUBMIT saves the FYI and queues the messages for delivery at the designated date and time.
+        <br/><br/>
+        <strong>Send by value: </strong> Selecting this option displays a list of date fields in a list. A second list displays a range of time periods
+        ( -15 mins, -30 mins, -1 day, -2 days, etc.). This is a list of "how much early before the value of the date in the selected date field in the first field" you want the message
+        to be sent. Using this option, you can schedule messages to be delivered, say, "2 days before the appointment date".
+        Clicking SUBMIT saves the FYI and queues the messages for delivery at the designated date and time.
+        <br/><br/>
+        <strong>Save but do not schedule as yet: </strong> Selecting this option and clicking SAVE saves the FYI but does not schedule it for delivery.
+        This option is useful if you are working on a FYI over several days and do not want to schedule it for delivery till you are done.
+
+        <br/><br/>
+        <strong>Update changes: </strong> Selecting this option and clicking SAVE UPDATES saves the changes you made to the FYI. It does not affect the
+        VOICE SHARE options that you set before. This is useful to change the contents of an existing FYI and saving the changes.
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

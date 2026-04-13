@@ -1,0 +1,19 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        SMS SHARE lets you schedule messages.
+        <br/><br/>        
+        <strong>Send now: </strong> Selecting this option and clicking SEND saves the FYI and queues the messages for delivery immediately.
+        <br/><br/>
+        <strong>Schedule to send later: </strong> Selecting this option displays a date and time selector to schedule delivery in the future.
+        Clicking SEND saves the FYI and queues the messages for delivery at the designated date and time.
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

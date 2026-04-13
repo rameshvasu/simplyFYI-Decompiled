@@ -1,0 +1,29 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        You can work with a FYI just like a document, well almost! You can open it, make some changes and save it. You can't exactly print a FYI but instead you can send messages to receipients by email, SMS or voice. And you can also rename it if you think of a better name for your FYI.
+        <br/><br/><strong>OPEN</strong><br/>
+        Click "Open" for the FYI that you want to work with. Once opened, you can do one of several things. We'll tell you more when you get there. For now, here's the gist. You can:<br/>       
+        <br />
+        <ul>
+          <li>Send messages without editing the message template, or</li>
+          <li>Edit the message template and then send messages</li>          
+        </ul>
+        <br/><strong>RENAME</strong><br/>
+        Click "Rename" for the FYI that you want to rename. Once you've renamed it, click "Rename" again. If you change your mind before saving, click 'Cancel'.
+        <br/><br/><strong>DEACTIVATE</strong><br/>
+        Click "Deactivate" to deactivate a FYI. This action will move the FYI to the "Deactivated FYIs" list. To activate the FYI again, click "Activate" in the "Deactivated FYIs" list. This will move the FYI back to the "Active FYIs" list.
+        <br/><br/><strong>METAID</strong><br/>
+        Serial number of the FYI.
+        <br/><br/><strong>EP</strong><br/>
+        This is the communication End Point (EP): email, SMS or voice indicated graphically.
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

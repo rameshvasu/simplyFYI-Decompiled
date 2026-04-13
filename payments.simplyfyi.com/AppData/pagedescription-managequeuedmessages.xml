@@ -1,0 +1,17 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        View and delete message queued for delivery. Each line in the report shows a batch of messages for a FYI queued for delivery.
+        <br/><br/>To delete a batch click the "X" icon. The batch will be dequeued and not be delivered. <br />
+        <br/><br/>When a batch of messages is deleted and dequeued, the appropriate number of simplyfyi UNITS will be credited back to your account.
+        The adjustment can be viewed in the "Manage Your Account" menu under Usage.        
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

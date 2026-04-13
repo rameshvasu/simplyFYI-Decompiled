@@ -1,0 +1,78 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        This is the editor used to design the content and the look and feel of your email. 
+        <br/><br/><strong>TEMPLATE EDITOR</strong>
+        <br/>The Template Editor lets you create HTML-based emails using building blocks called "Templates". An email has 3 parts:        
+
+        <br/><br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Subject Line: </strong>
+          </i>
+          Enter the subject of the email.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Message: </strong>
+          </i>
+          The message has 3 parts: Header, Body, Side Column. Click <a href='http://www.simplyfyi.com'>here</a> to learn more about the EMAIL EDITOR.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Signature: </strong>
+          </i>
+          The signature ("from") for the email.
+        </div>
+
+        <br/><br/><strong>TEXT EDITOR</strong>
+        <br/>The Text Editor lets you create text-based emails using building blocks called "Templates". simplyfyi sends text-based
+        emails as a back up for HTML-based emails to ensure that the text-email gets delivered if HTML-email gets blocked by the receiving 
+        party's some email servers (done so usually for security reasons). A text email has 3 parts:
+
+        <br/><br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Subject Line: </strong>
+          </i>
+          Enter the subject of the email.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Message: </strong>
+          </i>
+          The message has 3 parts: Header, Body, Side Column. Click <a href='http://www.simplyfyi.com'>here</a> to learn more about the EMAIL EDITOR..
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Signature: </strong>
+          </i>
+          The signature ("from") for the email.
+        </div>
+
+        <br/><br/><strong>EDITOR AND PREVIEW MODES</strong>
+        <br/>After creating the structure and content of the email, you can switch to PREVIEW MODE by clicking the link at the top right.
+        The PREVIEW MODE will display the email as the receipient would see it. It will also let you preview with the real data embedded.
+        The THEME drop-down list in the PREVIEW mode lets you change the display and color theme of the email so that you can pick the
+        theme of your choice.
+
+        PREVIEW MODEs are available for both the TEMPLATE and TEXT EDITORS.
+        <br/><br/>Click <a href='http://www.simplyfyi.com'>here</a> to learn more about the EMAIL EDITOR.
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

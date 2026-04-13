@@ -1,0 +1,32 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        This is the editor used to design the content and the look and feel of your voice message.
+        <br/><br/>A voice message has 2 parts:
+
+
+        <br/><br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Actions to perform when connected (On Connnect): </strong>
+          </i>
+          Click <a href='http://www.simplyfyi.com'>here</a> to learn more about the VOICE EDITOR.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Actions to perform when keys are pressed (Key Actions): </strong>
+          </i>
+          Click <a href='http://www.simplyfyi.com'>here</a> to learn more about the VOICE EDITOR.
+        </div>        
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

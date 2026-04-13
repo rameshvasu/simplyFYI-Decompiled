@@ -1,0 +1,87 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        The MANAGE CONTACT LIST page is where your can manage your lists and contacts. You can add new items to your lists, edit exisiting items ans also delete list items.
+
+        <br/><br/>So let's see how this is done.
+        <br/><br/><strong>NAVIGATE LISTS</strong><br/>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Application Type</strong>
+          </i>
+          <br/>This is a list of the different types of Office Live Small Business Applications. Select the type of Application that you want to work with.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Application</strong>
+          </i>
+          <br/>This is a list of applications that match the selected Application Type. Select the Application that you want to search through.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>List</strong>
+          </i>
+          <br/>This is a list of all the lists in the selected Application. Select the list that you want to manage.          
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>View Data Button</strong>
+          </i>
+          <br/>Click this button to view the data in the selected list.
+        </div>
+
+        <br/>        
+
+        <br/><br/><strong>LIST DATA</strong><br/>
+        This shows the all the rows in the selected list.  
+        <div style='padding-left:20px;'>
+        <i>
+          <strong>Edit Link</strong>
+        </i>
+        <br/>Click the Edit link against the row that you want to edit. You can change the values in the fields of the row. When done editing, click the "Update" link.
+        To ignore changes made, click the "Cancel" link.
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Upload File Link</strong>
+          </i>
+          <br/>To add new data to the list, click the "Upload File" link. Browse to the location of a comma-separated-file (CSV) that contains the new rows of data that you want
+          to add to the list. After selecting the file, click the "Upload File" button.
+          
+          <br/><br/>NOTE: A comma-separated-file (CSV) is a text file that contains the values for rows of data that you want to upload to a list.
+          For example, if you have a contact list that has First Name, Last Name and Email as its fields, create a CSV file that looks like this:<br/><br/>
+          
+          John,Doe,jd@hotmail.com<br/>
+          Mary,Poppins,marypoppins@gmail.com<br></br>
+          
+          Each field is separated by a comma. Commas are not allowed to be a part of the field value itself.
+                    
+        </div>
+
+        <br/>
+        <div style='padding-left:20px;'>
+          <i>
+            <strong>Delete Rows Link</strong>
+          </i>
+          <br/>To delete one or more rows of data, select the check box against each row that you want to delete. Then click the "Delete" button.          
+        </div>
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

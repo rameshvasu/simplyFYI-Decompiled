@@ -1,0 +1,29 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        Analyze your messages and track how many messages were sent and to whom.
+        <br/><br/><strong>PERIOD</strong>: Select the time period for the report.
+        
+        <br/><br/>Details within the report:
+        <br/><strong>TO</strong>: Email or number the message was sent to.
+        <br/><br/><strong>SCHEDULED</strong>: When the message was scheduled to be sent.
+        <br/><br/><strong>STATUS</strong>: Status of message:
+        <ul>
+          <li>Queued (orange)</li>
+          <li>Sent (green)</li>
+          <li>Failed (red)</li>
+        </ul>
+        <br/><br/><strong>SENT</strong>: The date and time the message was sent to the receipient.
+        <br/><br/><strong>OPENED</strong> (Email only): The date and time the receipient opened the email.
+        <br/><br/><strong>BOUNCED</strong> (Email only): The date and time the email bounced.
+
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>

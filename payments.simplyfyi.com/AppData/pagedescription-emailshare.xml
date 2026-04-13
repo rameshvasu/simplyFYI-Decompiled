@@ -1,0 +1,20 @@
+﻿<table width='100%'>
+  <tr>
+    <td valign='top'>
+      <div>
+        EMAIL SHARE lets you schedule messages.
+        <br/><br/>        
+        <strong>Save and send now: </strong> Selecting this option and clicking SUBMIT saves the FYI and queues the messages for delivery NOW.
+        <br/><br/>
+        <strong>Save and schedule to send later: </strong> Selecting this option displays a date and time selector to schedule delivery in the future. 
+        Clicking SUBMIT saves the FYI and queues the messages for delivery at the designated date and time.
+        <br/><br/>      
+      </div>
+    </td>
+    <td valign='top'>
+      <span style='margin-left:5px'>
+        <img src='./images/page-description-help-icon.jpg' />
+      </span>
+    </td>
+  </tr>
+</table>
