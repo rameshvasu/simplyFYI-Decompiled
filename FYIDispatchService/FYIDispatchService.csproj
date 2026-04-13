@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\rames\OneDrive\Desktop\simplyFYI-Decompiled-Code\simplyfyi.services\FYIDispatchService\FYIDispatchService.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5791E97A-8446-4EA2-9557-F7EC80AA2053}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FYIDispatchService</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>RameshInnovation.VoiShare.Services</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FYIDAL" />
+    <Reference Include="FYIDataAccessShadow" />
+    <Reference Include="MandrillAdapter">
+      <HintPath>lib\MandrillAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="OptInOutEngine">
+      <HintPath>lib\OptInOutEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="PushoverAdapter" />
+    <Reference Include="SendGridAdapter">
+      <HintPath>lib\SendGridAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utils" />
+    <Reference Include="VoiShare4OLTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FYIDispatchService.cs" />
+    <Compile Include="JangoMailService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs" />
+    <Compile Include="SMTP2GO.cs" />
+    <Compile Include="TwilioService.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="JangoMailWS\JangoMail.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_XMLCompletedEventH.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_XMLCompletedEventA.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_StringCompletedEve.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_StringCompletedEve.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_DataSet2CompletedE.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_DataSet2CompletedE.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_XML2CompletedEvent.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_XML2CompletedEvent.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_String2CompletedEv.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_String2CompletedEv.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_DataSetCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_DataSetCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_StringCompletedEventHan.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_StringCompletedEventArg.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_XMLCompletedEventHandle.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_DataSet2CompletedEventH.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_DataSet2CompletedEventA.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_String2CompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_String2CompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_XML2CompletedEventHandl.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesAll_XML2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_DeleteAllMembersCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_DeleteAllMembersCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_DeleteBulkMembersCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_DeleteBulkMembersCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByAddress_DataSetCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByAddress_DataSetCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByAddress_XMLCompletedEventHandle.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByAddress_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByID_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByID_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSentMessageCountCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSentMessageCountCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByID_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMember_ByID_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMembers_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMembers_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMembers_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMembers_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMembers_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetMembers_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\PauseMassEmailCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\PauseMassEmailCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\ResumeMassEmailCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\ResumeMassEmailCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetPageViews_DatasetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetPageViews_DatasetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetPageViews_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetPageViews_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetPageViews_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetPageViews_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMailboxFull_DatasetCompletedEventHandle.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMailboxFull_DatasetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMailboxFull_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMailboxFull_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_DataSet3CompletedE.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_DataSet3CompletedE.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_XML3CompletedEvent.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_XML3CompletedEvent.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_String3CompletedEv.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_String3CompletedEv.cs" />
+    <Compile Include="JangoMailWS\Settings_ExternallyLaunchedEmailsCompletedEventHan.cs" />
+    <Compile Include="JangoMailWS\Settings_ExternallyLaunchedEmailsCompletedEventArg.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMailboxFull_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMailboxFull_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_RenameCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_RenameCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSMTPLogCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSMTPLogCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSMTPLog_TransactionalCompletedEventHand.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSMTPLog_TransactionalCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AuthenticateUserCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AuthenticateUserCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipientActions_DatasetCompletedEventH.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipientActions_DatasetCompletedEventA.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipientActions_XMLCompletedEventHandl.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipientActions_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipientActions_StringCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipientActions_StringCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSurveyResponses_DatasetCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSurveyResponses_DatasetCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSurveyResponses_XMLCompletedEventHandle.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSurveyResponses_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSurveyResponses_StringCompletedEventHan.cs" />
+    <Compile Include="JangoMailWS\Reports_GetSurveyResponses_StringCompletedEventArg.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailReport_Multiple_StringCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailReport_Multiple_StringCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\SMTPRelay_AddIPCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SMTPRelay_AddIPCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SMTPRelay_DeleteIPCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SMTPRelay_DeleteIPCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\MergeEmailListsCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\MergeEmailListsCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetTransactionalIDsFromCustomIDCompletedEventHandl.cs" />
+    <Compile Include="JangoMailWS\GetTransactionalIDsFromCustomIDCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetTransactionalIDsFromRelayIDCompletedEventHandle.cs" />
+    <Compile Include="JangoMailWS\GetTransactionalIDsFromRelayIDCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetViewAsWebPageURLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetViewAsWebPageURLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetSpamScoreCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetSpamScoreCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\UploadAttachmentCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\UploadAttachmentCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\UploadAssetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\UploadAssetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetSingleEmailStats_StringCo.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetSingleEmailStats_StringCo.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetSingleEmailStats_DatasetC.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetSingleEmailStats_DatasetC.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetSingleEmailStats_XMLCompl.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetSingleEmailStats_XMLCompl.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetOpens_DataSetCompletedEve.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetOpens_DataSetCompletedEve.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetOpens_XMLCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetOpens_XMLCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetOpens_StringCompletedEven.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetOpens_StringCompletedEven.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetClicks_DataSetCompletedEv.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetClicks_DataSetCompletedEv.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetClicks_XMLCompletedEventH.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetClicks_XMLCompletedEventA.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetClicks_StringCompletedEve.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetClicks_StringCompletedEve.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetRecipients_DataSetComplet.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetRecipients_DataSetComplet.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetRecipients_XMLCompletedEv.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetRecipients_XMLCompletedEv.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByTransactionalGroup_DataSetComp.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByTransactionalGroup_DataSetComp.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByTransactionalGroup_XMLComplete.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByTransactionalGroup_XMLComplete.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByTransactionalGroup_StringCompl.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByTransactionalGroup_StringCompl.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByTransactionalGroup_DataSet2Com.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByTransactionalGroup_DataSet2Com.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByTransactionalGroup_XML2Complet.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByTransactionalGroup_XML2Complet.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByTransactionalGroup_String2Comp.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByTransactionalGroup_String2Comp.cs" />
+    <Compile Include="JangoMailWS\DeleteTransactionalGroupCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteTransactionalGroupCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\TransactionalGroups_RenameCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\TransactionalGroups_RenameCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetTransactionalGroupIDCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetTransactionalGroupIDCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_Transactional_GetRecipients_StringComplete.cs" />
+    <Compile Include="JangoMailWS\1Reports_Transactional_GetRecipients_StringComplete.cs" />
+    <Compile Include="JangoMailWS\SendTransactionalEmailCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SendTransactionalEmailCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SendTransactionalEmailRawCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SendTransactionalEmailRawCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddTransactionalGroupCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddTransactionalGroupCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SendTransactionalEmailFromTemplateCompletedEventHa.cs" />
+    <Compile Include="JangoMailWS\SendTransactionalEmailFromTemplateCompletedEventAr.cs" />
+    <Compile Include="JangoMailWS\CreateAccountCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\CreateAccountCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\CreateLocalDBProfileCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\CreateLocalDBProfileCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddUnsubscribeCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddUnsubscribeCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\CheckUnsubscribeCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\CheckUnsubscribeCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteUnsubscribeCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteUnsubscribeCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddBounceCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddBounceCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\CheckBounceCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\CheckBounceCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteBounceCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteBounceCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddGroupCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddGroupCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailStatusCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailStatusCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailStatus_CustomCampaignIDCompletedEventH.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailStatus_CustomCampaignIDCompletedEventA.cs" />
+    <Compile Include="JangoMailWS\GetGroupFieldListCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetGroupFieldListCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetUnsubscribeListCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetUnsubscribeListCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetUnsubscribeList2CompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetUnsubscribeList2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormalCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormalCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormal_IncludePastCompletedEventHandl.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormal_IncludePastCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetBounceListAllCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetBounceListAllCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetBounceListAll2CompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetBounceListAll2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormal2CompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormal2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormal_IncludePast2CompletedEventHand.cs" />
+    <Compile Include="JangoMailWS\GetBounceListNormal_IncludePast2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupByIDCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupByIDCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_EditMember_ByAddressCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_EditMember_ByAddressCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_EditMember_ByIDCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_EditMember_ByIDCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupByNameCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupByNameCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddGroupFieldCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddGroupFieldCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddGroupField_BigCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddGroupField_BigCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupFieldCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupFieldCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddGroupMemberStringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddGroupMemberStringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\AddGroupMemberCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\AddGroupMemberCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupMemberCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteGroupMemberCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailPreviousCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailPreviousCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailPrevious2CompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailPrevious2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailRawCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\SendMassEmailRawCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\DeleteMassEmailCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\DeleteMassEmailCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailReportCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetMassEmailReportCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\GetGroupMemberCountCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\GetGroupMemberCountCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\IsMemberInGroupCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\IsMemberInGroupCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromDataCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromDataCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromData2CompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromData2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromFileCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromFileCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromFile2CompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\ImportGroupMembersFromFile2CompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipients_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipients_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipients_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipients_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipients_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetRecipients_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetOpens_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetOpens_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetOpens_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetOpens_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetOpens_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetOpens_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetAllClicks_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetAllClicks_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetAllClicks_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetAllClicks_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetAllClicks_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetAllClicks_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetClicksByURL_DataSetCompletedEventHandle.cs" />
+    <Compile Include="JangoMailWS\Reports_GetClicksByURL_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetClicksByURL_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetClicksByURL_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetClicksByURL_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetClicksByURL_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetComplaintsByCampaign_DatasetCompletedEv.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetComplaintsByCampaign_DatasetCompletedEv.cs" />
+    <Compile Include="JangoMailWS\Reports_GetComplaintsByCampaign_XMLCompletedEventH.cs" />
+    <Compile Include="JangoMailWS\Reports_GetComplaintsByCampaign_XMLCompletedEventA.cs" />
+    <Compile Include="JangoMailWS\Reports_GetComplaintsByCampaign_StringCompletedEve.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetComplaintsByCampaign_StringCompletedEve.cs" />
+    <Compile Include="JangoMailWS\Groups_GetList_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetList_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetList_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetList_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Groups_GetList_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Groups_GetList_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesByCampaign_DataSetCompleted.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetUnsubscribesByCampaign_DataSetCompleted.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesByCampaign_StringCompletedE.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetUnsubscribesByCampaign_StringCompletedE.cs" />
+    <Compile Include="JangoMailWS\Reports_GetUnsubscribesByCampaign_XMLCompletedEven.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetUnsubscribesByCampaign_XMLCompletedEven.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_DataSetCompletedEvent.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByCampaign_DataSetCompletedEvent.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_XMLCompletedEventHand.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_StringCompletedEventH.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_StringCompletedEventA.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_DataSet2CompletedEven.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByCampaign_DataSet2CompletedEven.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_XML2CompletedEventHan.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_XML2CompletedEventArg.cs" />
+    <Compile Include="JangoMailWS\Reports_GetBouncesByCampaign_String2CompletedEvent.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetBouncesByCampaign_String2CompletedEvent.cs" />
+    <Compile Include="JangoMailWS\Reports_GetForwards_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetForwards_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetForwards_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetForwards_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetForwards_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetForwards_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetReplies_DataSetCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetReplies_DataSetCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetReplies_StringCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetReplies_StringCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetReplies_XMLCompletedEventHandler.cs" />
+    <Compile Include="JangoMailWS\Reports_GetReplies_XMLCompletedEventArgs.cs" />
+    <Compile Include="JangoMailWS\Reports_GetMassEmailInformation_DataSetCompletedEv.cs" />
+    <Compile Include="JangoMailWS\1Reports_GetMassEmailInformation_DataSetCompletedEv.cs" />
+    <Compile Include="TwilioRest\Account.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FYIDispatchService.resx" />
+    <EmbeddedResource Include="ProjectInstaller.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
