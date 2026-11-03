@@ -1,0 +1,134 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- PayPal JS SDK (Sandbox) -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AVP2ZNYzJKkbJSbKYdhqdiHWGtTj2pmiZJ4I30WWgCTU8o-LBXh3VsdrQO-mKyfn2qyNGmHkEkcmBDq3&currency=USD"></script>
+
+    <link href="App_Themes/Blue/evol.colorpicker.css" type="text/css" rel="stylesheet">
+    <link href="App_Themes/Blue/freetextbox.css" type="text/css" rel="stylesheet">
+    <link href="App_Themes/Blue/Styles.css" type="text/css" rel="stylesheet">
+    <title>
+        Topup
+    </title>
+    <link type="text/css" href="app_themes/White/Styles.css">
+    <style type="text/css">
+        .auto-style1 {
+            height: 145px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding-top:0px; padding-bottom:0px;padding-left:0px; border-bottom:solid 0px #dadada; width:100%; position:relative;top:-2px;">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td valign="top" align="center">
+                        <div id="mainheader">
+                            <div style="padding-top:1px; padding-bottom:5px; border-bottom:solid 0px #dadada; width:100%;">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td width="200px" align="left">
+                                                <span id="logopart1">
+                                                    simply
+                                                </span><span id="logopart2">FYI</span>
+                                                <span id="beta">beta</span>
+                                                <span style="font-size:small; color:#CC6600; font-weight:bold"></span>
+                                            </td>
+                                            <td valign="middle" align="center">
+                                                <span id="tagline">
+                                                    <span id="taglinecontent">simplyFYI Communications, LLC                     </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="logotagline">easy customer engagement</span>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="position:relative; top:-55px; left:-8px">
+                            <div id="mainwrapper">
+                                <div id="copy">
+                                    <div id="maindivwide">
+                                        <div id="maincontent">
+
+                                            <div class="sectiondivider">
+                                                <div style="position:relative;left:15px;top:4px">
+                                                    <div id="pagedescriptionbar">
+                                                        Payment Processed Successfully
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="instructioncontainer">
+                                                <div class="instruction-big">
+                                                    Thank you for your business.
+                                                </div>
+                                            </div>
+                                            <br><h2>Transaction details</h2>
+                                            <div style="padding-top:10px" class="instruction">Order ID:XXXX<br>TransactionID ID:XXXX<br>Transaction  Date:XXXX</div>
+                                            <div  style="padding-top:20px" ><a href="./Start.aspx" id="BackLink">Back to Control Panel</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <div style="padding-top:20px;margin-top:25px;clear:both;border-top:solid 0px #eeeeee; width:100%; bottom:15px;position:relative;margin-left:0px;">
+                            <div id="footertext">Copyright 2026 © simplyFYI Communications. All rights reserved.</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>
+    // Read query parameters
+    const params = new URLSearchParams(window.location.search);
+
+    const email = params.get("email");
+    const orderId = params.get("orderId");
+    const captureId = params.get("captureId");
+    const timestamp = params.get("timestamp");
+    const item = params.get("item_bought");
+    const amount = params.get("amount");
+    const currency = params.get("currency");
+
+    // Convert timestamp if needed
+    let formattedDate = "";
+    if (timestamp) {
+        formattedDate = new Date(timestamp).toLocaleString();
+    }
+
+    // Inject into your page
+    document.querySelector(".instruction").innerHTML =
+        "<br><strong>Thank you for your business. Here is a summary of your purchase:</strong>" +
+        "<br><br>Payment source: PayPal<br>" +
+        "Order / Transaction ID: " +  (orderId || "N/A") + "<br>" +
+        "Capture ID: " + (captureId || "N/A") + "<br>" +
+        "Payer Email: " + (email || "N/A") + "<br>" +
+        "Transaction Date: " + (formattedDate || "N/A") + "<br><br>" + 
+        "Item: " + (item || "N/A") + "<br>" +
+        "Amount: " + (amount || "N/A") + " " + currency|| "N/A";
+</script>
+
+
+
+
+</body>
+</html>

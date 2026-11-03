@@ -1,0 +1,347 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- PayPal JS SDK (Sandbox) -->
+    <!--<script src="https://www.paypal.com/sdk/js?client-id=AVP2ZNYzJKkbJSbKYdhqdiHWGtTj2pmiZJ4I30WWgCTU8o-LBXh3VsdrQO-mKyfn2qyNGmHkEkcmBDq3&currency=USD"></script>-->
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AVP2ZNYzJKkbJSbKYdhqdiHWGtTj2pmiZJ4I30WWgCTU8o-LBXh3VsdrQO-mKyfn2qyNGmHkEkcmBDq3&currency=USD&enable-funding=venmo"></script>
+
+
+    <link href="App_Themes/Blue/evol.colorpicker.css" type="text/css" rel="stylesheet">
+    <link href="App_Themes/Blue/freetextbox.css" type="text/css" rel="stylesheet">
+    <link href="App_Themes/Blue/Styles.css" type="text/css" rel="stylesheet">
+    <title>
+        Topup
+    </title>
+    <link type="text/css" href="app_themes/White/Styles.css">
+    <style type="text/css">
+        .auto-style1 {
+            height: 145px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding-top:0px; padding-bottom:0px;padding-left:0px; border-bottom:solid 0px #dadada; width:100%; position:relative;top:-2px;">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td valign="top" align="center">
+                        <div id="mainheader">
+                            <div style="padding-top:1px; padding-bottom:5px; border-bottom:solid 0px #dadada; width:100%;">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td width="200px" align="left">
+                                                <span id="logopart1">
+                                                    simply
+                                                </span><span id="logopart2">FYI</span>
+                                                <span id="beta">beta</span>
+                                                <span style="font-size:small; color:#CC6600; font-weight:bold"></span>
+                                            </td>
+                                            <td valign="middle" align="center">
+                                                <span id="tagline">
+                                                    <span id="taglinecontent">simplyFYI Communications, LLC                     </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="logotagline">easy customer engagement</span>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="position:relative; top:-55px; left:-8px">
+                            <div id="mainwrapper">
+                                <div id="copy">
+                                    <div id="maindivwide">
+                                        <div id="maincontent">
+
+                                            <div class="sectiondivider">
+                                                <div style="position:relative;left:15px;top:4px">
+                                                    <div id="pagedescriptionbar">
+
+                                                        Purchase Units
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="instructioncontainer">
+                                                <div class="instruction-big">
+                                                    Topup your simplyFYI account with extra units using secure payments by PayPal.
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <table style="width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding-right:5px; vertical-align:top">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="auto-style1" style="width:">
+                                                                            <div style="padding-left:30px">
+                                                                                <table>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="vertical-align:top">
+                                                                                                <input type="hidden" name="on0" value="simplyfy Units">
+                                                                                                <span style="color: #3C7FAF;font-family:Arial;font-weight:bold;">
+                                                                                                    Purchase simplyFYI UNITS
+                                                                                                </span>
+                                                                                                <span class="instruction"><br>Select from below and click the PayPal button to pay.</span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="padding-top:10px">
+                                                                                                <select id="units-skus" name="os0">
+                                                                                                    <option selected value="1000 units">1000 units $10.00 USD</option>
+                                                                                                    <option value="2000 units">2000 units $20.00 USD</option>
+                                                                                                    <option value="3000 units">3000 units $30.00 USD</option>
+                                                                                                    <option value="5000 units">5000 units $50.00 USD</option>
+                                                                                                    <option value="7500 units">7500 units $75.00 USD</option>
+                                                                                                    <option value="10000 units">10000 units $100.00 USD</option>
+                                                                                                    <option value="50 units">ERR_INSTRUMENT_DECLINED units $5.00 USD</option>
+                                                                                                    <option value="50 units">ERR_DUPLICATE_INVOICE_ID units $5.00 USD</option>                                                                                                    
+                                                                                                    <option value="50 units">ERR_PERMISSION_DENIED units $5.00 USD</option>
+                                                                                                    <option value="50 units">ERR_NOT_ENABLED_FOR_CARD_PROCESSING units $150.00 USD</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <div style="padding-top:15px; width:100px" id="paypal-button-container"></div>                                                                              
+                                                                            </div>
+                                                                        </td>
+                                                                        <td style="vertical-align: top;">
+                                                                            <div style="padding-left:50px; color:red" class="instruction" id="error_result"></div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-top:10px; padding-left:35px; text-align:left" colspan="2"><a href="./Start.aspx" id="BackLink">Back to Control Panel</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <div style="padding-top:20px;margin-top:25px;clear:both;border-top:solid 0px #eeeeee; width:100%; bottom:15px;position:relative;margin-left:0px;">
+                            <div id="footertext">Copyright 2026 © simplyFYI Communications. All rights reserved.</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Local variable or component state to store the active payment method
+
+            let base_url = 'https://simplyfyi-ordermanager.azurewebsites.net';
+            //let base_url = ' http://localhost:7220';
+
+            let selectedFundingSource = '';
+            let selectedSKU = '';
+
+
+
+            // PayPal Buttons code here
+            paypal.Buttons({
+                // Restrict to only the PayPal funding source
+                //fundingSource: paypal.FUNDING.PAYPAL,
+
+                // 1. Capture the selected method immediately when clicked
+
+                onClick: function (data) {
+
+                    document.getElementById("error_result").innerHTML = "";
+
+                    document.getElementById("error_result").style.display = "none";
+                    // data.fundingSource will return strings like "venmo" or "paypal"
+
+                    selectedFundingSource = data.fundingSource;
+
+                    console.log("Customer selected funding source:", selectedFundingSource);
+
+                },
+                style: {
+                    layout: 'vertical',   // prevents multiple buttons
+                    color: 'gold',
+                    shape: 'rect',
+                    label: 'paypal'
+                },
+
+                // 1️⃣ Create Order → calls your Azure Function
+                createOrder: function () {
+                    // Get selected option text
+                    const select = document.getElementById("units-skus");
+                    const selectedText = select.options[select.selectedIndex].text;
+                    console.log(select.selectedIndex + ":" + selectedText);
+
+                    // Example: "5000 units $50.00 USD"
+                    // Parse units and price
+                    const [unitsPart, pricePart] = selectedText.split(" $");
+
+                    const units = unitsPart.replace(" units", "").trim();   // "5000"
+                    const price = pricePart.replace(" USD", "").trim();
+
+                    const sku = selectedText;
+                    selectedSKU = sku;
+
+                    let createUrl = base_url + '/api/paypal/create-order';
+
+                    if (base_url.startsWith('https://simplyfyi-ordermanager.azurewebsites.net')) {
+                        createUrl += '?code=krkx3mqSQL3rac5A-Zm8NHAADkwjE2RlAPRgl1VcolJPAzFu9cW6wA==';
+                    }
+
+                    return fetch(createUrl, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            units: units,
+                            price: price,
+                            custom: sku
+                        })
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log("CreateOrder Response:", data);
+                            return data.orderID;
+                        });
+                },
+
+                // 2️⃣ Capture Order → calls your Azure Function
+                onApprove: function (data) {
+
+                    let captureUrl = base_url + '/api/paypal/capture-order';
+                    if (base_url.startsWith('https://simplyfyi-ordermanager.azurewebsites.net')) {
+                        captureUrl += '?code=9pCov09L5uKCXHlYfde_jtx0Z0XAdMP3RN3MYiHk5okhAzFu2rKX1g==';
+                    }
+
+                    return fetch(captureUrl, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            orderID: data.orderID,
+                            selectedSKU: selectedSKU
+                        })
+                    })
+                        .then(async res => {
+
+                            const bodyText = await res.text();
+                            let body;
+
+                            try {
+                                body = JSON.parse(bodyText);
+                            } catch (e) {
+                                throw new Error("Invalid JSON from backend");
+                            }
+
+                            const timestamp = new Date().toLocaleString();
+
+                            // ⭐ If backend returned 422 or any non-OK status
+                            if (!res.ok) {
+
+                                const errorName = body?.name || "Unknown Error";
+                                const errorIssue = body?.details?.[0]?.issue || "No details";
+
+                                document.getElementById("error_result").style.display = "block";
+                                document.getElementById("error_result").innerHTML =
+                                    "<strong>PayPal Error:</strong><br>" +
+                                    "Error: " + errorName + "<br>" +
+                                    "Details: " + errorIssue + "<br>" +
+                                    "Date & Time: " + timestamp;
+
+                                return Promise.reject(body);
+                            }
+
+                            // ⭐ Success path
+                            return body;
+                        })
+                        .then(resp => {
+
+                            console.log("response:", resp);
+
+                            let captureData = JSON.parse(resp);
+                            let error_name = captureData?.name || null;
+                            let error_details = captureData?.details?.[0]?.issue || null;
+
+                            if (error_name != null) {
+                                document.getElementById("error_result").style.display = "block";
+                                document.getElementById("error_result").innerHTML =
+                                    "<strong>PayPal Error:</strong><br>" +
+                                    "Error: " + error_name + "<br>" +
+                                    "Details: " + error_details + "<br>" +
+                                    "Date & Time: " + new Date().toLocaleString();
+                                return Promise.reject(captureData);
+                            }
+
+                            const pu = captureData?.purchase_units?.[0];
+                            const payments = pu?.payments;
+
+                            const itemBought = payments?.captures?.[0]?.custom_id || "Unknown";
+                            const amountPaid = payments?.captures?.[0]?.amount?.value || "";
+                            const currency = payments?.captures?.[0]?.amount?.currency_code || "";
+                            const captureId = payments?.captures?.[0]?.id || null;
+
+                            let payerEmail = encodeURIComponent(captureData?.payer?.email_address || "");
+
+                            const timestamp = new Date().toISOString();
+
+                            let redirectUrl = "https://www.simplyfyi.com/payments/TopupCompleted.htm";
+                            redirectUrl += "?email=" + payerEmail;
+                            redirectUrl += "&orderId=" + captureData.id;
+                            redirectUrl += "&captureId=" + captureId;
+                            redirectUrl += "&timestamp=" + timestamp;
+                            redirectUrl += "&item_bought=" + itemBought;
+                            redirectUrl += "&amount=$" + amountPaid;
+                            redirectUrl += "&currency=" + currency;
+                            redirectUrl += "&funding_source=" + selectedFundingSource;
+
+                            window.location.href = redirectUrl;
+                        })
+                        .catch(err => {
+                            console.error("Final error handler:", err);
+                        });
+                },
+
+
+                onError: function (err) {
+                    console.error("PayPal Button Error:", err);
+                    alert("Something went wrong — check the console.");
+                }
+
+            }).render("#paypal-button-container");
+        });
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<%@ Page Language="C#" MasterPageFile="~/MainTemplateWide.master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="RameshInnovation.SimplyfyiExpress.Login" Title="Transactional emails made easy for PayPal merchants" %>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="main" runat="server">  
+    <script type="text/javascript">
+        (function () {
+            if (typeof window.janrain !== 'object') window.janrain = {};
+            if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+
+            //janrain.settings.tokenUrl = 'http://www.simplyfyiapps.com/app/janrain.aspx';
+            janrain.settings.tokenUrl = '<%=System.Configuration.ConfigurationManager.AppSettings.Get("JanrainTokenUrl") %>';
+
+            function isReady() { janrain.ready = true; };
+            if (document.addEventListener) {
+                document.addEventListener("DOMContentLoaded", isReady, false);
+            } else {
+                window.attachEvent('onload', isReady);
+            }
+
+            var e = document.createElement('script');
+            e.type = 'text/javascript';
+            e.id = 'janrainAuthWidget';
+
+            if (document.location.protocol === 'https:') {
+                e.src = 'https://rpxnow.com/js/lib/payments-simplyfyi/engage.js';
+            } else {
+                e.src = 'http://widget-cdn.rpxnow.com/js/lib/payments-simplyfyi/engage.js';
+            }
+
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(e, s);
+        })();
+    </script>
+         
+    <div id="maincontent">   
+        <div class="sectiondivider"> 
+            <div id="pagedescriptionbar"> 
+                <span><asp:Label ID="PageDescription" Text="You need a PayPal Standard, Advanced Or Pro Account to Sign In" runat="server" /></span>                                                                                                                                                                                                                                                                                                   
+            </div>
+        </div>
+        <br /><br />          
+        <div style="text-align:center">
+            <%--<h1 style="font-size:2.1em;font-family:Helvetica,Arial,FreeSans,sans-serif;line-height:1em;padding-top:.66em; color:#669900;">Sign Up / Sign In</h1>       --%>
+            <br />
+            
+            <table width="100%">                
+                <%--<tr>
+                    <th align="left" style="padding-left:50px"><span class="instruction-big">Use your Social Identity</span></th>
+                    <th align="center"><span class="instruction-big">-OR-</span></th>
+                    <th align="left" style="padding-left:50px"><span class="instruction-big">Enter Username and Password</span></th>
+                </tr>--%>
+                <tr>                
+                    <td align="center" width="450px" style="padding-top:20px">
+                        <div id="janrainEngageEmbed"></div>
+                        <%--<iframe src="http://simplyfyiexpress.rpxnow.com/openid/embed?token_url=http%3A%2F%2Flocalhost:1517%2Fjanrain.aspx" scrolling="no" frameBorder="no" allowtransparency="" style="width:400px;height:240px"></iframe>--%>
+
+<br/>
+<div class="instruction">
+                At this time, simplyFYI.com supports the following browsers only:               
+                <br /><br/>Mozilla® Firefox®, most recent stable version (recommended)
+                <br />Microsoft® Internet Explorer® versions 7, 8 and 9
+                <br />Google Chrome™, most recent stable version
+		<br/>Apple® Safari® versions 5.x and 6.x on Mac OS X
+            </div>
+
+                    </td>
+                    <%--<td></td>
+                    <td align="center" style="padding-left:50px; visibility:collapse" >
+                        <div id="usercredentials" style="margin-top:20px;">
+                            <table>
+                                <tr>
+                                    <td><span class="instruction">Email</span></td>
+                                    <td style="padding-left:15px"><asp:TextBox runat="server" Width="200" ID="txtUsername"></asp:TextBox></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="instruction">Password</span></td>
+                                    <td style="padding-left:15px"><asp:TextBox runat="server" ID="txtPassword" Width="200" TextMode="Password"></asp:TextBox></td>
+                                </tr>                                
+                                <tr>
+                                    <td></td>
+                                    <td style="padding-left:15px" align="right">
+                                        <asp:Button runat="server" ID="btnSignIn" 
+                                            Text="Sign In" onclick="btnSignIn_Click"/></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="instruction"><div style="padding-top:10px; color:Red"><asp:Label runat="server" ID="lblErrorMessage"></asp:Label></div></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>--%>
+
+                    <%--<td style="padding-right:10px"  valign=top><span id=signininstructions>Sign in (first time users and exisiting users) to simplyfyi using your exisiting Facebook, Windows Live, Yahoo or Google ID. <br /><br />Once we authenticate your identity, you will be on your way to using simplyfyi.</span></td>--%>
+                    <%--<td valign=top><iframe src="http://simplyfyiexpress.rpxnow.com/openid/embed?token_url=http%3A%2F%2Fwww.simplyfyiapps.com%2Fapp%2Fjanrain.aspx" scrolling="no" frameBorder="no" allowtransparency="" style="width:400px;height:240px"></iframe> </td>--%>
+                </tr>
+                </table>
+            <br /><br />
+            <%--<div class="instruction-big">New to simplyFYI? <a href="SignUp.aspx">Join now.</a></div>--%>
+        </div>     
+        
+    </div>        
+</asp:Content>
+
