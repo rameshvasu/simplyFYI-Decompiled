@@ -45,7 +45,7 @@ namespace RameshInnovation.SimplyfyiExpress
 			}
 		}
 
-	private static void DoPostAuthActions(EngageUser EngageUser, HttpContext context)
+	public static void DoPostAuthActions(EngageUser EngageUser, HttpContext context)
 	{
     string empty = string.Empty;
     if (EngageUser != null)
