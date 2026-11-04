@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Check Merchant Onboarding</title>
+</head>
+<body>
+  <h2>Check Merchant Onboarding Status</h2>
+  <button id="onboardCheckBtn">Check</button>
+
+  <script>
+      var ONBOARD_CHECK_URL = "https://simplyfyi-paypal-platform.azurewebsites.net/api/v1/merchant?code=GHre8tghaCBvxkWfvWzCGin9NDkzXUPLuvc8ZGJb9xTcAzFuapH_qA==&primaryemail=sb-iutwb52086103@business.example.com";
+      //var ONBOARD_CHECK_URL = "https://simplyfyi-paypal-platform.azurewebsites.net/api/v1/merchant?code=GHre8tghaCBvxkWfvWzCGin9NDkzXUPLuvc8ZGJb9xTcAzFuapH_qA==&primaryemail=sb-iutwb52086103@businessXXXXXXXXX.example.com";
+
+    document.getElementById("onboardCheckBtn").onclick = async () => {
+      const res = await fetch(ONBOARD_CHECK_URL, { method: "GET" });
+      const data = await res.json();
+      
+      var onboarded = 'ONBOARDED';
+      if (Object.keys(JSON.parse(data) ).length === 0)
+      {
+          onboarded = 'NOT ONBOARDED';
+      }
+
+      alert(onboarded);
+    };
+  </script>
+</body>
+</html>

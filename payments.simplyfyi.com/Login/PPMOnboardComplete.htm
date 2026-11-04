@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Merchant Onboarding</title>
+</head>
+<body>
+<div class="paypal-login">
+  <p class="paypal-login-text">
+    <h2 style="color:rgb(0, 175, 227)">simplyFYI Onboarding Steps Completed</h2>
+<br>
+<p>Thank you for completing your simplyFYI onboarding steps.</p>
+
+
+<p>Business: Acme Widgets LLC<br>
+Email: owner@acmewidgets.com<br>
+Merchant ID: ABC123XYZ<br>
+Payer ID: PAYER12345<br>
+Tracking ID: TRK-987654</p>
+<h5>Capabilities</h5>
+
+<p>Accept Payments: Enabled<br>
+
+Refunds: Enabled<br>
+
+Vault: Pending<br>
+
+Subscriptions: Enabled<br>
+
+Partner Fee: Enabled<br>
+
+Payouts: Pending</p>
+
+<h5>KYC Status
+</h5>
+<p>Completed
+(Your account is fully verified)
+
+
+
+<h5>Consent
+</h5>
+<p>Granted (
+If revoked → show Reconnect PayPal button)</p>
+
+
+
+<h5>Next steps</h5>
+<p>PayPal is now performing the required verification checks for your account. This process typically finishes within a few hours, but in some cases may take up to 1–3 business days depending on your business type and the information provided.</p>
+
+
+<p>Once verification is complete, simplyFYI will be enabled to automatically begin sending your custom confirmation emails for eligible transactions. We will also send you an email notification as soon as your account is fully ready.</p>
+
+
+<p>In the meantime, you can explore simplyFYI and start designing your email templates, previewing them, and testing how they will look for your customers. Everything you set up now will activate automatically once PayPal completes verification.</p>
+
+
+<style>
+  .paypal-login {   
+    text-align:center;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    margin-top:100px;
+  }
+
+.paypal-login-button {
+
+    cursor: pointer;
+
+}
+
+.logo-tagline {   
+    text-align:center;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    margin-top:100px;
+  }
+
+  .paypal-login-text {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .paypal-login-button img {
+    display: inline-block;
+    border: 0;
+  }
+
+  .paypal-privacy {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  .paypal-privacy a {
+    color: #0070ba;
+    text-decoration: none;
+  }
+
+  .paypal-privacy a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+
+  <script>
+      //const ONBOARD_URL = "http://localhost:7210/api/v1/partner/referral";
+      const ONBOARD_URL = "https://simplyfyi-paypal-platform.azurewebsites.net/api/v1/partner/referral?code=YGriM8crZFxMNiatwA4MZzQ9BXl2AQOST59XJ721AAvcAzFu3hMkFw==";
+
+    document.getElementById("onboardBtn").onclick = async (e) => {
+    e.preventDefault();
+
+    // Show status message
+    document.getElementById("authStatus").innerText = "Authenticating with PayPal…";
+
+    const res = await fetch(ONBOARD_URL, { method: "POST" });
+    const data = await res.json();
+
+    // Redirect merchant to PayPal onboarding
+    window.location.href = data.redirectUrl;
+};
+
+    
+  </script>
+</body>
+</html>

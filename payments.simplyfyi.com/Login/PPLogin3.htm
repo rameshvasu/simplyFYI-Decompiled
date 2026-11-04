@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merchant Onboarding</title>
+</head>
+<body>
+<table><tr><td width="50%">
+<div class="paypal-login">
+  <p class="paypal-login-text">
+    <h2 style="color:rgb(0, 175, 227)">Log in to simplyFYI with PayPal</h2>
+    Log in securely to simplyFYI with PayPal. <br>You will be redirected to PayPal to authenticate, and your PayPal password is never shared with us.
+  </p>
+<p>
+We use PayPal only to authenticate you, let you buy usage points, and read your transactions so we can send custom payment-confirmation emails.
+<br>We never touch your customer payments or your PayPal balance.
+</p>
+  <br>
+
+  <a id="onboardBtn"     
+    class="paypal-login-button"
+  >
+    <img
+      src="https://www.paypalobjects.com/devdoc/log-in-with-paypal-button.png"
+      alt="Log in with PayPal"
+    />
+  </a>
+
+<div id="authStatus" style="margin-top:10px; font-size:0.9rem; color:#0070ba;"></div>
+
+
+  <p class="paypal-privacy">
+    By continuing, you agree to our
+    <a href="https://www.simplyfyi.com/Privacy.aspx" target="_blank" rel="noopener">Privacy Policy</a>
+    and
+    <a href="https://www.simplyfyi.com/Terms.aspx" target="_blank" rel="noopener">Terms of Service</a>.
+  </p>
+
+</div>
+</td>
+<td width="50%"></td>
+</tr></table>
+
+<style>
+  .paypal-login {   
+    text-align:center;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    margin-top:100px;
+  }
+
+.paypal-login-button {
+
+    cursor: pointer;
+
+}
+
+.logo-tagline {   
+    text-align:center;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    margin-top:100px;
+  }
+
+  .paypal-login-text {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .paypal-login-button img {
+    display: inline-block;
+    border: 0;
+  }
+
+  .paypal-privacy {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  .paypal-privacy a {
+    color: #0070ba;
+    text-decoration: none;
+  }
+
+  .paypal-privacy a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+
+  <script>
+      //const ONBOARD_URL = "http://localhost:7210/api/v1/partner/referral";
+      const ONBOARD_URL = "https://simplyfyi-paypal-platform.azurewebsites.net/api/v1/partner/referral?code=YGriM8crZFxMNiatwA4MZzQ9BXl2AQOST59XJ721AAvcAzFu3hMkFw==";
+
+    document.getElementById("onboardBtn").onclick = async (e) => {
+    e.preventDefault();
+
+    // Show status message
+    document.getElementById("authStatus").innerText = "Authenticating with PayPal…";
+
+    const res = await fetch(ONBOARD_URL, { method: "POST" });
+    const data = await res.json();
+
+    // Redirect merchant to PayPal onboarding
+    window.location.href = data.redirectUrl;
+};
+
+    
+  </script>
+</body>
+</html>

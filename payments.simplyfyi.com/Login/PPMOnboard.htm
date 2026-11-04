@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Connect PayPal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .btn {
+            background: #0070ba;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+            .btn:hover {
+                background: #003087;
+            }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Connect simplyFYI with your PayPal Account</h2>
+        <p>Link your simplyFYI account with PayPal to sync order updates seamlessly and send custom payment confirmation email.</p>
+
+        <!-- Button triggers direct redirect; no SDK script required -->
+        <button class="btn" id="connect-btn" onclick="redirectToPayPal()">
+            Connect simplyFYI with PayPal
+        </button>
+    </div>
+
+    <script>async function redirectToPayPal() {
+            const btn = document.getElementById("connect-btn");
+            try {
+                btn.disabled = true;
+                btn.innerText = "Initializing...";
+
+                // 1. Call your Azure Function to generate the partner referral action_url
+
+                // LOCALHOST action_url:
+                //let action_url = "http://127.0.0.1:7210/api/v1/partner/referral";
+
+                // LIVE action_url:
+                let action_url = "https://simplyfyi-onboardmanager.azurewebsites.net/api/v1/auth/process";
+
+                const response = await fetch(action_url, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" }
+                });
+
+                const data = await response.json();
+
+                if (data.redirectUrl) {
+                    // 2. Safely redirect the browser to PayPal's hosted onboarding experience
+                    window.location.href = data.redirectUrl;
+                } else {
+                    alert("Failed to retrieve PayPal onboarding link.");
+                    btn.disabled = false;
+                    btn.innerText = "Connect with PayPal";
+                }
+            } catch (err) {
+                console.error("Connection error:", err);
+                alert("An error occurred while connecting to PayPal.");
+                btn.disabled = false;
+                btn.innerText = "Connect with PayPal";
+            }
+        }</script>
+</body>
+</html>
